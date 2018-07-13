@@ -2,26 +2,43 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
+#h1{
+    color: darkred 
+}
 #forms{
     
     height: 250px;
-    width:40%;
+    width:49%;
     padding: 10px 0px 0px 10xp;
     float: left;
-    border: 2px solid darkblue;
+    border: 2px solid dimgray;
+    background-color:lavender;
+    font-family:sans-serif ;
+    
 }
 
 #div{
-    border: 2px solid darkblue;
-    width: 40%;
+    border: 2px solid dimgray;
+    width: 49%;
     height: 250px;
     padding: 10px 0px 0px 10xp;
     float: left;
-    margin-left: 10px;
+    margin-left: 12px;
+    background-color:lavender;
+    text-align: center;
+    color:darkslategrey;
+        
+}
+#result{
+    padding-left: 50px;
+    font-size: 50px;
+    color:darkred;
+    
 }
 form{
     float: left;
     padding-left: 10px;
+     
 }
 input{
     margin-left: 10px;
@@ -29,6 +46,23 @@ input{
 
 p{
     float: left;
+}
+#rate,#time,#amt{
+    width:200px;
+    background-color: aliceblue;
+}
+label{
+    width:100px;
+    float:left;
+}
+#bttn{
+    border-radius:15px;
+    background-color:goldenrod;
+    font-weight: 700
+}
+#bttn:hover{
+    background-color:darkgoldenrod;
+    color: lightcyan;
 }
 
 

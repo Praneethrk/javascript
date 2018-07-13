@@ -1,3 +1,17 @@
+/*2.html Script*/
+function cal(){
+    var amount = document.getElementById('amt').value;
+    var time = document.getElementById('time').value;
+    var rate = document.getElementById('rate').value;
+    var si = (amount*time*rate)/100;
+                
+    document.getElementById('result').innerHTML='SI='+si;
+        msg='Amount='+amount;        
+            }
+            
+  /*2.html Script Ends*/  
+
+/*3.html Script*/
 function isEven() {
     var num = document.getElementById('num').value;
     var message;
@@ -29,8 +43,9 @@ function bill(){
         }
      
     var total_amount = amount+min_amount;
-    /*msg='bill amount='+total_amount;*/
+    msg='bill amount='+total_amount;
     document.getElementById('bills').innerHTML=total_amount;
     
 
 }
+/*3.html Script Ends*/
