@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript examples</title>
+        <link rel="stylesheet" href="css/main.css"/>
+        <script type="text/javascript">
+            function cal(){
+                amount=document.getElementById('amt').value;
+                time=document.getElementById('time').value;
+                rate=document.getElementById('rate').value;
+                si=(amount*time*rate)/100;
+                
+                document.getElementById('result').innerHTML='SI='+si;
+                
+            }
+            
+           
+        </script>
+    
+    </head>
+    <body>
+        <h3>SI Calculator</h3>
+        <div id="forms">
+            <form>
+                
+                    
+                    <p>
+                        <label>Amount:</label>
+                        <input type="number" id="amt"/>
+                    
+                    </p><br/>
+                    <p>
+                        <label>time:</label>
+                        <input type="number" id="time"/>
+                    
+                    </p><br/>
+                    <p>
+                        <label>Rate:</label>
+                        <input type="number" id="rate"/>
+                    
+                    </p><br/>
+                    <p>
+                       <input type="button" onclick="cal()" value="Calculate">
+                    </p><br/>
+                
+               
+                
+            </form>
+         
+        </div>
+    <div id="div">
+    <p id="result"> 
+    </p>
+        </div>
+    </body>
+   
+</html>
