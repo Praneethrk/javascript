@@ -66,10 +66,59 @@ function fibonacci(){
         }
 }
 
+function reverse(){
+    num=getInput();
+    var rev=0;
+    var r;
+    while(num!=0){
+        r=num%10;
+        rev=rev*10+r;
+        num=Math.floor(num/10);
+    }
+    showResult(rev);
+}
+
+function ispali(){
+    num=getInput();
+    var num1 = num;
+    var rev=0;
+    var r;
+    while(num!=0){
+        r=num%10;
+        rev=rev*10+r;
+        num=Math.floor(num/10);
+    }
+    if(num1==rev)
+        showResult(num1+" is palindrome");
+    else
+        showResult(num1+" is not palindrome");
+}
+
+function sumofdigit(){
+    num=getInput();
+    var sum=0;
+    while(num!=0){
+        
+          sum+=num%10;
+          num=Math.floor(num/10);
+    }
+          showResult(sum);
+}
+function singledigit(){
+    num=getInput();
+    var sum=0;
+    while(num>9){
+        
+        sum=Math.floor(num/10)+num%10;
+        num=sum;
+    }
+          showResult(sum);
+}
+
 function getInput(){
     var n = document.getElementById('num').value;
     return n;
 }
 function showResult(message){
-      document.getElementById('result').innerHTML="<h4>"+message+"<h4>"; 
+      document.getElementById('res').innerHTML="<h4>"+message+"<h4>"; 
 }

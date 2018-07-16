@@ -65,19 +65,36 @@ label{
     color: lightcyan;
 }
 
+/*3.html ends*/
 
 
 
 
 
-{
-    width:80px;
+
+
+
+#in{
+    margin:0px 10px 10px 10px;
+    width:100%;
     height:20px;
-    background-color: blueviolet;
-    border-radius: 5px;
-    color:white;
-    border:2px solid blueviolet;
+    
+}
+
+#res{
+    margin:10px 10px 10px 10px;
+    width:100%;
+    height:20px;
+    font-size: 50px;
+    text-align: center;
+    color:darkblue
+    
+}
+button{
+    margin-left: 10px;
+    border-radius: 10px;
+    background-color:coral;
 }
 button:hover{
-    background-color: darkmagenta;
+    background-color:gray;
 }
